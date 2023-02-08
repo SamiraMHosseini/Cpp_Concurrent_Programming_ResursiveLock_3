@@ -12,3 +12,18 @@ Until the lock count of a recursive mutex reaches zero, meaning that all locks h
 Each time a thread locks a recursive mutex, the lock count is incremented, and each time the thread unlocks the mutex, the lock count is decremented. The mutex is only released when the lock count reaches zero, meaning that all locks have been released. At this point, other threads are free to lock the mutex and access the shared resource.
 
 In this way, a recursive mutex provides exclusive access to a shared resource, ensuring that multiple threads can access the resource safely and efficiently, even if the same thread needs to lock and unlock the mutex multiple times.
+
+
+
+ThreadID 35856, counter: 1
+ThreadID 35856, counter: 2
+ThreadID 35856, counter: 3
+ThreadID 39844, counter: 4
+ThreadID 39844, counter: 5
+ThreadID 39844, counter: 6
+ThreadID 32892, counter: 7
+ThreadID 32892, counter: 8
+ThreadID 32892, counter: 9
+ThreadID 30000, counter: 10
+ThreadID 30000, counter: 11
+ThreadID 30000, counter: 12
